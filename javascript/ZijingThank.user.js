@@ -1,21 +1,22 @@
 // ==UserScript==
-// @name        ZijingThank 
-// @version     0.1
+// @name        ZijingThank
+// @author      Harry
 // @description thank uploader automatically
-// @match       http://zijingbt.njuftp.org/index*
-// @copyright   2014+, Harry
+// @encoding    utf-8
+// @include     http://zijingbt.njuftp.org/index*
+// @require     http://code.jquery.com/jquery-2.1.3.min.js
+// @grant       none
+// @run-at      document-end
+// @version     0.2
 // ==/UserScript==
 
-var allthanks, i=0; 
-allthanks = document.evaluate("//a[@class='index_thanks']",document,null,XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,null); 
-//alert(allthanks.snapshotLength); 
-doThank = function() 
-{ 
-    if (i < allthanks.snapshotLength) 
-    { 
-        allthanks.snapshotItem(i).onclick(); 
-        i++; 
-        setTimeout("doThank()", 100); 
-    } 
-} 
-doThank();
+console.log( "TO DO: " + $("a.index_thanks").length );
+var int = setInterval(function c(){
+    if( $("a.index_thanks").length == 0 ){
+        clearInterval(int);
+        console.log("DONE");
+    }
+    else{
+        $("a.index_thanks").get(0).click();
+    }
+},100)

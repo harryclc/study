@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         PandaTV Player Toggle
-// @version      0.1
+// @version      0.2
 // @description  Show/Hide SWF player of PandaTV
 // @author       Harry
 // @require      http://code.jquery.com/jquery-2.2.4.min.js

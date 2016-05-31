@@ -26,6 +26,7 @@ function ImportCss() {
 
 function AddButton(){
   $(document.body).append("<div id='button_player_toggle'>开关播放器</div>");
+  $('.room-player-swf-container').attr('style',"background-color: #FFF;");
   $('#button_player_toggle').click(function (){
     $('#room-player-swf').toggle();
     return false;

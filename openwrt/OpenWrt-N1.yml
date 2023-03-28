@@ -71,7 +71,9 @@ jobs:
           CONFIG_TARGET_armvirt=y
           CONFIG_TARGET_armvirt_64=y
           CONFIG_TARGET_armvirt_64_Default=y
+          CONFIG_BRCMFMAC_PCIE=y
           CONFIG_BRCMFMAC_SDIO=y
+          CONFIG_BRCMFMAC_USB=y
           CONFIG_BTRFS_PROGS_ZSTD=y
           CONFIG_DOCKER_CGROUP_OPTIONS=y
           CONFIG_DOCKER_NET_MACVLAN=y
@@ -145,9 +147,11 @@ jobs:
           CONFIG_PACKAGE_ip6tables-extra=y
           CONFIG_PACKAGE_ip6tables-mod-nat=y
           CONFIG_PACKAGE_ipt2socks=y
+          CONFIG_PACKAGE_iputils-arping=y
           CONFIG_PACKAGE_ipv6helper=y
           CONFIG_PACKAGE_iw=y
           CONFIG_PACKAGE_iwinfo=y
+          CONFIG_PACKAGE_jq=y
           CONFIG_PACKAGE_kmod-br-netfilter=y
           CONFIG_PACKAGE_kmod-brcmfmac=y
           CONFIG_PACKAGE_kmod-brcmutil=y
@@ -189,6 +193,7 @@ jobs:
           CONFIG_PACKAGE_kmod-lib-zlib-inflate=y
           CONFIG_PACKAGE_kmod-lib-zstd=y
           CONFIG_PACKAGE_kmod-mac80211=y
+          CONFIG_PACKAGE_kmod-mii=y
           CONFIG_PACKAGE_kmod-mmc=y
           CONFIG_PACKAGE_kmod-nf-ipt6=y
           CONFIG_PACKAGE_kmod-nf-ipvs=y
@@ -197,10 +202,29 @@ jobs:
           CONFIG_PACKAGE_kmod-nf-reject6=y
           CONFIG_PACKAGE_kmod-nls-base=y
           CONFIG_PACKAGE_kmod-nls-utf8=y
+          CONFIG_PACKAGE_kmod-qmi_wwan_q=y
           CONFIG_PACKAGE_kmod-random-core=y
           CONFIG_PACKAGE_kmod-sit=y
           CONFIG_PACKAGE_kmod-tpm=y
+          CONFIG_PACKAGE_kmod-usb-acm=y
           CONFIG_PACKAGE_kmod-usb-core=y
+          CONFIG_PACKAGE_kmod-usb-ehci=y
+          CONFIG_PACKAGE_kmod-usb-net=y
+          CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+          CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
+          CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
+          CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
+          CONFIG_PACKAGE_kmod-usb-net-rndis=y
+          CONFIG_PACKAGE_kmod-usb-net-sierrawireless=y
+          CONFIG_PACKAGE_kmod-usb-ohci=y
+          CONFIG_PACKAGE_kmod-usb-serial=y
+          CONFIG_PACKAGE_kmod-usb-serial-option=y
+          CONFIG_PACKAGE_kmod-usb-serial-qualcomm=y
+          CONFIG_PACKAGE_kmod-usb-serial-wwan=y
+          CONFIG_PACKAGE_kmod-usb-wdm=y
+          CONFIG_PACKAGE_kmod-usb-xhci-hcd=y
+          CONFIG_PACKAGE_kmod-usb2=y
+          CONFIG_PACKAGE_kmod-usb3=y
           CONFIG_PACKAGE_kmod-veth=y
           CONFIG_PACKAGE_libarchive=y
           CONFIG_PACKAGE_libatomic=y
@@ -212,7 +236,6 @@ jobs:
           CONFIG_PACKAGE_libcap-bin=y
           CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
           CONFIG_PACKAGE_libdaemon=y
-          CONFIG_PACKAGE_libdb47=y
           CONFIG_PACKAGE_libdbus=y
           CONFIG_PACKAGE_libdevmapper=y
           CONFIG_PACKAGE_libexpat=y
@@ -250,25 +273,30 @@ jobs:
           CONFIG_PACKAGE_lua-maxminddb=y
           CONFIG_PACKAGE_luasocket=y
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
+          CONFIG_PACKAGE_luci-app-amlogic=y
           CONFIG_PACKAGE_luci-app-argonne-config=y
           CONFIG_PACKAGE_luci-app-cifs-mount=y
           CONFIG_PACKAGE_luci-app-diskman=y
           CONFIG_PACKAGE_luci-app-dockerman=y
           CONFIG_PACKAGE_luci-app-openclash=y
+          CONFIG_PACKAGE_luci-app-pushbot=y
           CONFIG_PACKAGE_luci-app-samba4=y
           CONFIG_PACKAGE_luci-app-ttyd=y
+          CONFIG_PACKAGE_luci-app-usbmodem=y
           CONFIG_PACKAGE_luci-app-uugamebooster=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-vssr=y
           # CONFIG_PACKAGE_luci-app-wol is not set
           CONFIG_PACKAGE_luci-app-zerotier=y
           CONFIG_PACKAGE_luci-compat=y
+          CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-argonne-config-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-cifs-mount-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-diskman-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-usbmodem-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-v2ray-server-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y
@@ -316,6 +344,8 @@ jobs:
           CONFIG_PACKAGE_perlbase-utf8=y
           CONFIG_PACKAGE_perlbase-xsloader=y
           CONFIG_PACKAGE_pigz=y
+          CONFIG_PACKAGE_pv=y
+          CONFIG_PACKAGE_quectel-CM-5G=y
           CONFIG_PACKAGE_ruby=y
           CONFIG_PACKAGE_ruby-bigdecimal=y
           CONFIG_PACKAGE_ruby-date=y
@@ -355,10 +385,12 @@ jobs:
           CONFIG_PACKAGE_zerotier=y
           CONFIG_PARTED_READLINE=y
           CONFIG_PERL_NOCOMMENT=y
+          CONFIG_PERL_THREADS=y
           CONFIG_SAMBA4_SERVER_AVAHI=y
           CONFIG_SAMBA4_SERVER_NETBIOS=y
           CONFIG_SAMBA4_SERVER_VFS=y
           CONFIG_SAMBA4_SERVER_WSDD2=y
+          # CONFIG_TARGET_IMAGES_GZIP is not set
           # CONFIG_TARGET_ROOTFS_CPIOGZ is not set
           # CONFIG_TARGET_ROOTFS_EXT4FS is not set
           # CONFIG_TARGET_ROOTFS_INITRAMFS is not set
@@ -369,8 +401,6 @@ jobs:
           CONFIG_boost-runtime-shared=y
           CONFIG_boost-static-and-shared-libs=y
           CONFIG_boost-variant-release=y
-          # CONFIG_BRCMFMAC_PCIE is not set
-          # CONFIG_BRCMFMAC_USB is not set
           EOF
 
           sed -i 's/^[ \t]*//g' ./.config
